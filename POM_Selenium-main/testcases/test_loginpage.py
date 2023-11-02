@@ -12,8 +12,8 @@ from POM_Login.LoginPage import Login
 class Test_Login(BaseTest):
 
 
-    def test_login1(self, driver):
-        objlogin = Login(self, driver)
+    def test_login1(self, setup):
+        objlogin = Login(self, setup)
         objlogin.login("Admin","admin123")
         print('demo went great')
 
